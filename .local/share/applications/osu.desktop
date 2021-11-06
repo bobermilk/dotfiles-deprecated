@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Comment=A freeware rhythm game where player uses mouse and keyboard input to click on circles to the rhythm in main gameplay mode.
+Icon=osu
+Exec=/home/milk/.config/scripts/osu.sh
+GenericName=osu
+Name=osu!
+StartupNotify=true

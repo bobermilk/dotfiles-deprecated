@@ -1,0 +1,38 @@
+
+EAPI=8
+inherit git-r3
+
+DESCRIPTION="Etterna: an advanced cross-platform rhythm game focused on keyboard play"
+HOMEPAGE="https://etternaonline.com"
+EGIT_REPO_URI="https://github.com/etternagame/etterna.git"
+EGIT_BRANCH="develop"
+
+LICENSE="MIT"
+SLOT="0"
+KEYWORDS=""
+IUSE=""
+
+DEPEND="
+media-libs/glu
+dev-libs/openssl
+media-libs/libogg
+media-libs/mesa
+dev-util/cmake"
+
+src_prepare() {
+	clone the repo?
+    cd "$srcdir/etterna"
+    sed -i CMakeLists.txt -e 's/\(set(OPENSSL_USE_STATIC_LIBS\) ON/\1 OFF/' 
+}
+
+src_configure() {
+    mkdir -p "build"
+    cd "build"
+    cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Release ..
+
+    make
+}
+
+src_install() {
+	
+}

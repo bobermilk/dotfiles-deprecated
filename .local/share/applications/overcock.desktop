@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Comment=Overcook cooking game
+Icon=overcooked
+Exec=/home/milk/.config/overcooked.sh
+GenericName=overcooked
+Name=Overcooked! 2
+StartupNotify=true

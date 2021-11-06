@@ -1,0 +1,4 @@
+media-video/obs-studio lua nvenc speex v4l
+app-emulation/wine-staging gstreamer jpeg mp3 opengl osmesa png staging
+app-text/zathura synctex
+app-text/zathura-meta pdf

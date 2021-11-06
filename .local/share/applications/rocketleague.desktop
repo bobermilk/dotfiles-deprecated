@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Comment=Rocket league
+Icon=rocketleague
+Exec=/home/milk/.config/rocketleague.sh
+GenericName=rocketleague
+Name=Rocket League
+StartupNotify=true

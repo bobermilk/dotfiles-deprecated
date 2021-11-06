@@ -1,0 +1,95 @@
+# clang
+# gotta bootstrap with gcc first then rebuild with itself
+emerge clang llvm compiler-rt llvm-libunwind lld #bootstrap
+emerge clang llvm libcxx libcxxabi compiler-rt llvm-libunwind lld #actual
+
+# X11
+x11-base/xorg-drivers
+media-libs/mesa
+x11-base/xorg-server
+x11-misc/rofi
+x11-misc/xdg-utils # https://www.freedesktop.org/wiki/Software/xdg-utils/
+
+# X11 theme
+# https://gpo.zugaina.org/x11-themes/materia-theme
+x11-themes/materia-theme
+x11-themes/adwaita-icon-theme
+
+# i3
+x11-wm/i3
+x11-misc/i3lock
+x11-misc/i3status
+# terminal
+x11-terms/alacritty
+x11-libs/gtk+
+x11-misc/dunst
+x11-misc/xbindkeys 
+x11-misc/xcalib
+x11-misc/xclip
+x11-apps/setxkbmap
+x11-misc/screenkey 
+
+# applications
+app-misc/task
+app-text/zathura
+app-text/zathura-meta
+www-client/ungoogled-chromium
+x11-drivers/OpenTabletDriver-bin
+media-video/mpv #https://wiki.gentoo.org/wiki/Mpv
+media-video/obs-studio #https://wiki.gentoo.org/wiki/OBS_Studio
+net-im/telegram-desktop
+
+# misc tools 
+app-arch/p7zip
+app-emulation/winetricks
+app-eselect/eselect-repository # eselect repository enable  # emaint sync -r foo
+app-misc/neofetch
+app-misc/ranger
+app-shells/fzf
+dev-util/cmake
+games-util/gamemode
+games-util/legendary
+sys-apps/ripgrep
+# fonts
+media-fonts/dejavu # mono for powerline? ttf-opensans?
+media-fonts/cantarell
+#microsoft-fonts
+
+#cpp shit
+dev-util/bear
+dev-util/valgrind
+dev-libs/tree-sitter # do i need?
+app-vim/youcompleteme
+
+# misc apps
+media-sound/audacity
+net-im/discord #install bd too, plugins in ~/.config/betterdiscord/
+net-misc/dropbox
+media-gfx/feh
+media-gfx/maim
+media-gfx/gimp
+media-video/ffmpeg
+media-libs/gstreamer
+x11-misc/screenkey
+app-shells/zsh
+app-shells/zsh-completions
+app-shells/gentoo-zsh-completions
+app-misc/tmux # https://wiki.gentoo.org/wiki/Tmux
+
+
+# optional (remove after install)
+# lxde-base/lxappearance
+# kvantum
+# sys-boot/osprober
+
+pip
+https://pypi.org/project/grapejuice/
+osu-cleaner-cli
+
+# self ebuild (manually install this shit)
+#etterna
+#osu-mime/handler
+#https://wiki.gentoo.org/wiki/Steam
+#https://wiki.gentoo.org/wiki/Wine#USE_flags
+#app-emulation/wine-vanilla
+

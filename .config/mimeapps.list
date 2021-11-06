@@ -1,0 +1,8 @@
+
+[Default Applications]
+x-scheme-handler/discord-378543094531883009=discord-378543094531883009.desktop
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop

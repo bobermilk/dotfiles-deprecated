@@ -1,0 +1,117 @@
+{
+  "OutputMode": {
+    "Path": "OpenTabletDriver.Desktop.Output.AbsoluteMode",
+    "Settings": [],
+    "Enable": true
+  },
+  "Filters": [],
+  "AutoHook": true,
+  "LockUsableAreaDisplay": true,
+  "LockUsableAreaTablet": true,
+  "DisplayWidth": 1920.0,
+  "DisplayHeight": 1080.0,
+  "DisplayXOffset": 960.0,
+  "DisplayYOffset": 540.0,
+  "TabletWidth": 90.0,
+  "TabletHeight": 66.4,
+  "TabletXOffset": 45.0,
+  "TabletYOffset": 33.2,
+  "TabletRotation": 0.0,
+  "EnableClipping": true,
+  "EnableAreaLimiting": false,
+  "LockAspectRatio": false,
+  "XSensitivity": 10.0,
+  "YSensitivity": 10.0,
+  "RelativeRotation": 0.0,
+  "RelativeResetDelay": "00:00:00.1000000",
+  "TipActivationPressure": 1.0,
+  "TipButton": {
+    "Path": "OpenTabletDriver.Desktop.Binding.MouseBinding",
+    "Settings": [
+      {
+        "Property": "Property",
+        "Value": "Left",
+        "HasValue": true
+      }
+    ],
+    "Enable": true
+  },
+  "PenButtons": [
+    null,
+    null
+  ],
+  "AuxButtons": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "Tools": [],
+  "Interpolators": [
+    {
+      "Path": "TabletDriverFilters.Devocub.Antichatter",
+      "Settings": [
+        {
+          "Property": "Latency",
+          "Value": 2.0,
+          "HasValue": true
+        },
+        {
+          "Property": "AntichatterStrength",
+          "Value": 3.0,
+          "HasValue": true
+        },
+        {
+          "Property": "AntichatterMultiplier",
+          "Value": 1.0,
+          "HasValue": true
+        },
+        {
+          "Property": "AntichatterOffsetX",
+          "Value": null,
+          "HasValue": false
+        },
+        {
+          "Property": "AntichatterOffsetY",
+          "Value": 1.0,
+          "HasValue": true
+        },
+        {
+          "Property": "PredictionEnabled",
+          "Value": null,
+          "HasValue": false
+        },
+        {
+          "Property": "PredictionStrength",
+          "Value": 1.1,
+          "HasValue": true
+        },
+        {
+          "Property": "PredictionSharpness",
+          "Value": 1.0,
+          "HasValue": true
+        },
+        {
+          "Property": "PredictionOffsetX",
+          "Value": 3.0,
+          "HasValue": true
+        },
+        {
+          "Property": "PredictionOffsetY",
+          "Value": 0.3,
+          "HasValue": true
+        },
+        {
+          "Property": "Frequency",
+          "Value": 1000.0,
+          "HasValue": true
+        }
+      ],
+      "Enable": true
+    }
+  ]
+}

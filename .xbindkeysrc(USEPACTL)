@@ -1,0 +1,23 @@
+"pamixer --toggle-mute"
+  XF86AudioMute
+
+"pamixer --decrease 5"
+  XF86AudioLowerVolume
+
+"pamixer --increase 5"
+  XF86AudioRaiseVolume
+
+"pulseaudio-ctl mute-input"
+  XF86AudioMicMute
+
+"xbacklight -5"
+  XF86MonBrightnessDown
+
+"xbacklight +5"
+  XF86MonBrightnessUp
+
+"dunstctl set-paused toggle"
+  Control + F4
+
+"for i in ~/Downloads/*.osz; mv $i /home/milk/osu\!/Songs/"
+  Control + F5

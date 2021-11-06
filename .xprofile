@@ -1,0 +1,51 @@
+# !/bin/bash
+# vim: ft=sh
+
+# Make sure we're in Dvorak
+setxkbmap dvorak -option caps:escape
+numlockx on
+
+# Use rofi as CM launcher
+export CM_LAUNCHER=rofi
+
+#ibus
+export GTK_IM_MODULE=ibus
+
+# Use zsh as shell
+export SHELL='/usr/bin/zsh'
+
+# For OBS
+export QT_QPA_PLATFORMTHEME='qt5ct'
+
+# Low latency
+export PIPEWIRE_LATENCY=512/48000
+
+export __GL_SYNC_TO_VBLANK=0
+export vblank_mode=0
+
+export WINE=wine
+export WINEPREFIX="$HOME/.wineosu"
+export WINEARCH=win64
+export STAGING_AUDIO_PERIOD=13333
+
+export LIBVA_DRIVER_NAME="vdpau"
+export VDPAU_DRIVER="nvidia"
+
+export TERMINAL=alacritty
+export WINEFSYNC=1
+export WINEESYNC=0
+export WINEFSYNC_FUTEX2=1
+eval $(gnome-keyring-daemon --start)
+export SSH_AUTH_SOCK
+
+discord --start-minimized &
+/usr/bin/bash -c 'ulimit -Sr 0 -Se 20; ulimit -Hr 0 -He 20; exec telegram-desktop -startintray' &
+otd &
+winestreamproxy &
+dunst &
+ibus-daemon -drxR &
+#/usr/bin/steam -silent &
+
+[ -f ~/.Xresources ] && xrdb -merge ~/.Xresources &
+[ -f ~/.xbindkeysrc ] && xbindkeys -p &
+[ -f ~/.fehbg ] && ~/.fehbg &

@@ -1,0 +1,4 @@
+#!/usr/bin/env fish
+for i in ~/Downloads/*.osz
+	mv $i ~/osu/Songs/ &
+end
